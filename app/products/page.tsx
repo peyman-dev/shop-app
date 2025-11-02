@@ -1,8 +1,13 @@
+import Content from '@/components/templates/products/content'
+import Sidebar from '@/components/templates/products/sidebar'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <main className="container flex gap-10">
+      <Sidebar />
+      <Content />
+    </main>
   )
 }
 

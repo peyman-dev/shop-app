@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./../public/css/globals.css";
 import ApplicationTemplate from "@/components/layouts/application-template";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "کلود شاپ - فروشگاه اینترنتی - ارزان ترین قیمت",
@@ -13,9 +14,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa-IR" dir="rtl" className="light">
-      <body>
-        <ApplicationTemplate>{children}</ ApplicationTemplate>
+    <html
+      lang="fa-IR"
+      dir="rtl"
+      className="light"
+      style={{ colorScheme: "light" }}
+      suppressHydrationWarning
+    >
+      <body className="**:font-YekanBakh-Regular">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light" // این خط پیش‌فرض رو به light تنظیم می‌کنه
+          enableSystem={false} // اگر می‌خوای از تنظیمات سیستم استفاده کنه، نگه دار؛ otherwise false کن
+          disableTransitionOnChange
+        >
+          <ApplicationTemplate>{children}</ApplicationTemplate>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,8 +1,11 @@
+import Stories from '@/components/templates/home/stories'
 import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+    <Stories />
+    </>
   )
 }
 
