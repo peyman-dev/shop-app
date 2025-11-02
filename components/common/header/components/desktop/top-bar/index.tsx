@@ -1,6 +1,8 @@
 import React from "react";
 import Search from "../../common/search";
 import ProfileDropdown from "./profile-dropdown";
+import Divider from "@/components/ui/divider";
+import Basket from "../../common/basket";
 
 const TopBar = () => {
   return (
@@ -8,8 +10,10 @@ const TopBar = () => {
       <div>
         <Search />
       </div>
-      <div>
+      <div className="flex-ic gap-4">
         <ProfileDropdown />
+        <Divider />
+        <Basket />
       </div>
     </div>
   );

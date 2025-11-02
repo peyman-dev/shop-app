@@ -7,6 +7,7 @@ const Search = () => {
             <button className='absolute cursor-pointer right-4'>
                 <SearchIcon className='size-4 text-[#A1A3A8]'/>
             </button>
+            <input type="text" className='size-full absolute right-0 top-0 outline-none px-10' placeholder='جستجو کنید ...' />
             
         </div>
   )
