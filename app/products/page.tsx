@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main className="container flex gap-10">
+    <main className="container flex mt-14 gap-10">
       <Sidebar />
       <Content />
     </main>
