@@ -15,7 +15,7 @@ const ShareAction = () => {
   });
 
   const handleCopy = () => {
-    console.log(window.location.href);
+    window.navigator.clipboard.writeText(window.location.href);
     setIsCopied(true);
 
     setTimeout(() => {

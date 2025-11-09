@@ -6,6 +6,7 @@ import ProductActions from "./components/product-actions";
 import Title from "./components/title";
 import MiniTitle from "./components/mini-title";
 import Category from "./components/category";
+import Image from "next/image";
 
 const HeroDetails = () => {
   const heroCSS = tv({
@@ -19,7 +20,9 @@ const HeroDetails = () => {
 
   return (
     <section className={container()}>
-      <div className={gallery()}></div>
+      <div className={gallery()}>
+        <Image width={600} height={600} src="/assets/static/product-1.png" alt="product" />
+      </div>
       <div>
         <div className="flex-between">
           <Category label="لوازم‌جانبی"/>
