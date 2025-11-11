@@ -11,7 +11,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <main id="home-pag-content" className="*:my-10 *:first:my-0! container">
+    <main id="home-pag-content" className="*:my-10 *:first:my-0!">
       <Stories />
       <HeroSlider />
       <LatestProducts />
