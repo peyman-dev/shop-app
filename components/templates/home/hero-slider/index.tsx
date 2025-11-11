@@ -14,10 +14,10 @@ const HeroSlider = () => {
   ];
   const { ref, slideNext, slidePrev, ButtonsWrapper } = useSlider();
   return (
-    <div className="relative group">
+    <div className="relative group h-[500px]!">
       <Slider
         ref={ref}
-        className="relative "
+        className="relative h-full"
         loop
         autoplay
         slidesPerView={1}
