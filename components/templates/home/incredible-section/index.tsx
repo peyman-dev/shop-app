@@ -24,7 +24,7 @@ const IncredibleSection = () => {
   }, []);
 
   return (
-    <section className="container group relative flex-center rounded-2xl bg-blue-600 h-[294px] my-20">
+    <section className="container group relative flex-center rounded-2xl bg-blue-600 h-80">
       <Slider
         className="h-[85%] ml-5! my-auto!"
         ref={ref}

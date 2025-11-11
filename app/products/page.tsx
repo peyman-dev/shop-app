@@ -6,7 +6,7 @@ const page = () => {
   return (
     <main className="container flex mt-14 gap-10">
       <Sidebar />
-      <Content />
+      {/* <Content /> */}
     </main>
   )
 }

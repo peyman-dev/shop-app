@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 @import "./../assets/fonts/index.css";
 
-
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 576px;
@@ -20,6 +19,57 @@
   --font-YekanBakh-ExtraBold: YekanBakh-ExtraBold;
   --font-YekanBakh-Black: YekanBakh-Black;
   --font-YekanBakh-ExtraBlack: YekanBakh-ExtraBlack;
+
+  /* Core Colors */
+  --color-primary: #010101; /* Deep black for buttons, headers, main CTAs – evokes premium streetwear edge */
+  --color-primary-dark: #000000; /* Pure black for shadows or emphasis */
+  --color-primary-light: #333333; /* Softer gray for secondary text or borders */
+
+  /* Secondary/Accent Colors – For pops of energy in GenZ style */
+  --color-secondary: #00a8e8; /* Electric blue – modern, hype for links, highlights, or product tags (trust + excitement) */
+  --color-accent: #ff2d55; /* Urban red/pink – bold for sales badges, alerts, or "Limited Stock" (urgency for sales) */
+  --color-accent-alt: #00ff85; /* Neon green – fresh for success messages or eco-friendly badges (youthful, positive vibe) */
+
+  /* Neutral/Background Colors – Light theme foundation */
+  --color-background: #ffffff; /* Pure white for main body – clean, spacious for product showcases */
+  --color-background-alt: #f5f5f5; /* Light gray for sections/cards – subtle depth without darkening the theme */
+  --color-surface: #ededed; /* Mid-light gray for modals, footers – modern minimalism */
+
+  /* Text Colors – High readability on light bg */
+  --color-text-primary: #010101; /* Matches primary for main body text – sharp, professional */
+  --color-text-secondary: #666666; /* Muted gray for subtitles, descriptions – reduces visual noise */
+  --color-text-disabled: #999999; /* Light gray for inactive elements – subtle, non-distracting */
+  --color-text-inverted: #ffffff; /* White for text on dark backgrounds (e.g., on primary buttons) */
+
+  /* Semantic Colors – For feedback and interactions */
+  --color-success: #00ff85; /* Bright green for "Added to Cart" or confirmations – positive reinforcement */
+  --color-error: #ff2d55; /* Red for errors like "Out of Stock" – attention-grabbing but not alarming */
+  --color-warning: #ffd700; /* Gold yellow for warnings like "Low Stock" – optimistic urgency */
+  --color-info: #00a8e8; /* Blue for tooltips/info – informative and calming */
+
+  /* Borders & Dividers */
+  --color-border: #cccccc; /* Light gray for subtle separations – keeps layout clean */
+  --color-border-focus: #00a8e8; /* Blue for input focus – accessible, modern highlight */
+
+  /* Shades for Interactivity (e.g., hovers, active states) */
+  --color-hover: rgba(
+    1,
+    1,
+    1,
+    0.1
+  ); /* Light overlay on primary for button hovers – subtle feedback */
+  --color-active: rgba(
+    1,
+    1,
+    1,
+    0.2
+  ); /* Darker overlay for clicks – tactile feel */
+  --color-shadow: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Soft black for box-shadows – adds depth without heaviness */
 }
 
 @utility container {
@@ -167,7 +217,7 @@
 }
 
 body {
-  @apply overflow-x-hidden
+  @apply overflow-x-hidden;
 }
 
 button {

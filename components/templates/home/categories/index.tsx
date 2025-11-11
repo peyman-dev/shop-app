@@ -2,7 +2,9 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <section className='container grid grid-cols-8 gap-5'>
+      <div></div>
+    </section>
   )
 }
 
