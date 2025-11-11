@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 const SectionLabel = () => {
   return (
-      <div className="mx-5 h-full w-25 flex-col-center justify-between ">
+      <div className=" h-full  flex-col-center justify-between ">
         <Image
           width={88}
           height={88}
