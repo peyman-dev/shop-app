@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./../assets/fonts/index.css";
+@import "./../assets/fonts/estedad/index.css";
 
 @theme {
   --breakpoint-*: initial;
@@ -17,6 +18,16 @@
   --font-YekanBakh-ExtraBold: YekanBakh-ExtraBold;
   --font-YekanBakh-Black: YekanBakh-Black;
   --font-YekanBakh-ExtraBlack: YekanBakh-ExtraBlack;
+
+  --font-Estedad-Thin: Estedad-Thin;
+  --font-Estedad-ExtraLight: Estedad-ExtraLight;
+  --font-Estedad-Light: Estedad-Light;
+  --font-Estedad-Regular: Estedad-Regular;
+  --font-Estedad-Medium: Estedad-Medium;
+  --font-Estedad-SemiBold: Estedad-SemiBold;
+  --font-Estedad-Bold: Estedad-Bold;
+  --font-Estedad-ExtraBold: Estedad-ExtraBold;
+  --font-Estedad-Black: Estedad-Black;
 
   /* Core Colors */
   --color-primary: #010101; /* Deep black for buttons, headers, main CTAs – evokes premium streetwear edge */
