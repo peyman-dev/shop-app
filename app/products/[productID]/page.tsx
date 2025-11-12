@@ -1,22 +1,12 @@
-import HeroDetails from "@/components/templates/product/hero-details";
-import Sidebar from "@/components/templates/product/sidebar";
+import Content from "@/components/templates/product/content";
+import Gallery from "@/components/templates/product/gallery";
 import React from "react";
 
 const page = () => {
   return (
-    <main
-      id="product-details"
-      className="grid grid-cols-8 gap-5 *:w-full  container"
-    >
-      <div id="content" className="*:w-full col-span-6 space-y-5 *:p-5  *:rounded-lg *:border *:border-neutral-200">
-      <HeroDetails />
-      <div>1*4</div>
-      <div>1*4</div>
-      <div>1*4</div>
-      <div>1*4</div>
-      <div>1*4</div>
-      </div>
-      <Sidebar />
+    <main id="product-page" className="container grid grid-cols-2 gap-5">
+      <Gallery />
+      <Content />
     </main>
   );
 };
