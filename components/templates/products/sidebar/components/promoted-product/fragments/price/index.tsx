@@ -3,7 +3,7 @@ import React from 'react'
 
 const Price = () => {
   return (
-    <div className='w-full flex justify-end items-end flex-col  **:font-YekanBakh-Bold! text-neutral-700 gap-1'>
+    <div className='w-full flex justify-end items-end flex-col  **:font-Estedad-Bold! text-neutral-700 gap-1'>
       <div className="flex-ic gap-1">
 
         <span>

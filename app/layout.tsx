@@ -21,7 +21,7 @@ export default function RootLayout({
       style={{ colorScheme: "light" }}
       suppressHydrationWarning
     >
-      <body className="**:font-YekanBakh-Regular">
+      <body className="**:font-Estedad-Regular text-primary-light">
         <ThemeProvider
           attribute="class"
           defaultTheme="light" // این خط پیش‌فرض رو به light تنظیم می‌کنه

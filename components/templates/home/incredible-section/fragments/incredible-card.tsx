@@ -28,7 +28,7 @@ const IncredibleCard = () => {
         لپ تاپ 16 اینچی لنوو مدل Legion 5 16IRX9-i7 14650HX 16GB 1SSD RTX4050
         </h3>
       </main>
-      <footer className="flex items-center justify-end text-sm font-YekanBakh-ExtraBold! text-zinc-700">
+      <footer className="flex items-center justify-end text-sm font-Estedad-ExtraBold! text-zinc-700">
         {Number(1_760_000).toLocaleString("fa-IR")} تومان
       </footer>
     </article>

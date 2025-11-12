@@ -18,7 +18,7 @@ const SectionLabel = () => {
           src={StaticImageDirector("AmazingOfferFace.svg")}
           alt="بهترین ها"
         />
-        <Link href="/products?event=incredible-offer" className="flex-center gap-0.5 text-sm font-YekanBakh-Bold text-white">
+        <Link href="/products?event=incredible-offer" className="flex-center gap-0.5 text-sm font-Estedad-Bold text-white">
           مشاهده همه
           <ChevronLeft className="size-4"/>
         </Link>
