@@ -38,7 +38,7 @@ const ProductCard = () => {
           <AnimatePresence>
             <motion.img
               className="size-full object-cover"
-              src={StaticImageDirector("product-2.png")}
+              src={StaticImageDirector("hat-1.jpg")}
               initial={{ scale: 1, }}
               animate={{ scale: 1.3 }}
               exit={{ scale: 1 }}
@@ -47,7 +47,7 @@ const ProductCard = () => {
           </AnimatePresence>
         ) : (
           <Image
-            src={StaticImageDirector("product-1.png")}
+            src={StaticImageDirector("product-1.jpg")}
             width={244}
             height={285}
             alt="Product"

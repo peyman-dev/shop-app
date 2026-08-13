@@ -1,14 +1,7 @@
-import Content from '@/components/templates/products/content'
-import Sidebar from '@/components/templates/products/sidebar'
-import React from 'react'
+import ProductsPage from "@/components/templates/products/pages/products-page";
 
 const page = () => {
-  return (
-    <main className="container flex mt-14 gap-10">
-      <Sidebar />
-      {/* <Content /> */}
-    </main>
-  )
-}
+  return <ProductsPage />;
+};
 
-export default page
+export default page;

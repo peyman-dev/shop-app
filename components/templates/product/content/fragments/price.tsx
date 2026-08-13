@@ -2,19 +2,16 @@ import React from "react";
 
 const Price = () => {
   return (
-    <div className="flex-ic gap-3">
-      <div className="flex text-base! text-primary-light/60 line-through items-end gap-1">
-        <p className="text-xl font-bold">
-          {Number(748_000).toLocaleString("fa-IR")}{" "}
-        </p>
-        <span className="font-bold">تومان</span>
-      </div>
+    <div className="flex flex-col items-end gap-2">
       <div className="flex items-end gap-1">
-        <p className="text-2xl font-bold">
-          {Number(438_000).toLocaleString("fa-IR")}{" "}
+        <p className="text-xl font-Estedad-ExtraBold!">
+          {Number(2_690_000).toLocaleString("fa-IR")}
         </p>
-        <span className="font-bold">تومان</span>
+        <span className="font-Estedad-Bold!">تومان</span>
       </div>
+      <span className="text-sm font-Estedad-Bold! text-primary-light">
+        موجود
+      </span>
     </div>
   );
 };

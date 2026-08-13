@@ -1,9 +1,7 @@
-import React from 'react'
+import SimpleDashboardPage from "@/components/dashboard/account/pages/simple-dashboard-page";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <SimpleDashboardPage title="کارت هدیه" />;
+};
 
-export default page
+export default page;

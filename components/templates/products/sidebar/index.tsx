@@ -1,14 +1,11 @@
-import React from 'react'
-import PromotedProduct from './components/promoted-product/'
-import Filters from './components/filters'
+import Filters from "./components/filters";
 
-const Sidebar = () => {
+const Sidebar = ({ className = "" }: { className?: string }) => {
   return (
-    <aside className='w-[270px]! min-w-[270px] *:border *:p-4 space-y-5 *:border-neutral-200 *:rounded-lg'>
-        <PromotedProduct />
-        <Filters />
+    <aside className={`space-y-5 ${className}`}>
+      <Filters />
     </aside>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { sortOptions } from "./settings/options";
 
 const Option = ({
-  id,
   value,
   label,
 }: {

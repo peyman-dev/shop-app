@@ -1,47 +1,33 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import React from "react";
-import { tv } from "tailwind-variants";
+import AuthField from "@/components/templates/auth/common/auth-field";
+import AuthSubmitButton from "@/components/templates/auth/common/auth-submit-button";
+import Link from "next/link";
 
 const LoginPage = () => {
-  const inputCSS = tv({
-    slots: {
-      label:
-        "text-neutral-500 select-none text-xs relative after:content-[':'] after:absolute flex-ic after:-left-1 after:text-neutral-400 after:text-xs",
-      input:
-        "w-full  h-10 border border-neutral-100 outline-none focus-within:ring-4 duration-150 transition-all ring-blue-500/20 focus-within:border-sky-300/50! rounded-md px-3 mt-2",
-    },
-  });
-
-  const { label, input } = inputCSS();
   return (
     <>
-      <main className="space-y-4">
-        <div>
-          <label htmlFor="login-identifier" className={label()}>
-            شماره موبایل:
+      <main className="space-y-5">
+        <AuthField
+          id="login-identifier"
+          label="شماره موبایل یا ایمیل"
+          placeholder="مثلا ۰۹۱۲۱۲۳۴۵۶۷"
+        />
+        <AuthField id="login-password" label="گذرواژه" type="password" />
+        <div className="flex items-center justify-between gap-3 text-xs font-bold">
+          <label className="flex items-center gap-2 text-neutral-600">
+            <input type="checkbox" className="size-4 accent-neutral-950" />
+            مرا به خاطر بسپار
           </label>
-          <input id="login-identifier" dir="ltr" className={input()} />
-        </div>
-        <div>
-          <label htmlFor="login-password" className={label()}>
-            گذرواژه:
-          </label>
-          <input
-            id="login-password"
-            type="password"
-            dir="ltr"
-            className={input()}
-          />
+          <Link href="/auth/register" className="text-neutral-950 underline">
+            ساخت حساب جدید
+          </Link>
         </div>
       </main>
       <footer>
-        <Button
-          className="w-full h-10 cursor-pointer bg-blue-500 hover:bg-blue-400"
-          variant="default"
-        >
-          ورود
-        </Button>
+        <AuthSubmitButton>ورود به حساب کاربری</AuthSubmitButton>
+        <p className="mt-5 text-center text-xs leading-6 text-neutral-500">
+          ورود شما به معنی پذیرش قوانین فروشگاه و سیاست حریم خصوصی است.
+        </p>
       </footer>
     </>
   );

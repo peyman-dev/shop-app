@@ -18,7 +18,7 @@ const IncredibleCard = () => {
       <header className={header()}>
         <Image 
           alt="Product"
-          src={StaticImageDirector("product-2.png")}
+          src={StaticImageDirector("hat-1.jpg")}
           width={132}
           height={132}
         />

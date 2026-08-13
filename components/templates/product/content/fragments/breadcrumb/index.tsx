@@ -4,15 +4,17 @@ import ProductsNavigator from "./products-navigator";
 
 const Breadcrumb = () => {
   return (
-    <div className="h-10.5 *:flex-ic *:gap-3 flex-between px-3 bg-primary-light/5 rounded-md text-primary-light/60 font-Estedad-SemiBold! text-sm">
-      <div>
+    <div className="flex min-h-10 items-center justify-between gap-3 rounded-sm bg-primary-light/5 px-3 text-xs font-Estedad-SemiBold! text-primary-light/60 sm:text-sm">
+      <div className="min-w-0 truncate">
         <Link href="/">خانه</Link>
         {" / "}
         <Link href="/">تیشرت</Link>
         {" / "}
         <Link href="/">باکسی</Link>
         {" / "}
-        <Link href="/" className="text-primary-light!">پیراهن باکسی 2 جیب آستین 3 ربع – 303071</Link>
+        <Link href="/" className="text-primary-light!">
+          پیراهن باکسی 2 جیب آستین 3 ربع – 303071
+        </Link>
       </div>
       <ProductsNavigator />
     </div>

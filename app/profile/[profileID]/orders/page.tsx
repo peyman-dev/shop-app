@@ -1,9 +1,7 @@
-import React from 'react'
+import OrdersPage from "@/components/dashboard/account/pages/orders-page";
 
 const orders = () => {
-  return (
-    <div>orders</div>
-  )
-}
+  return <OrdersPage />;
+};
 
-export default orders
+export default orders;

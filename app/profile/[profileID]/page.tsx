@@ -1,9 +1,7 @@
-import React from 'react'
+import DashboardHomePage from "@/components/dashboard/account/pages/dashboard-home-page";
 
 const profilePage = () => {
-  return (
-    <div>profilePage</div>
-  )
-}
+  return <DashboardHomePage />;
+};
 
-export default profilePage
+export default profilePage;

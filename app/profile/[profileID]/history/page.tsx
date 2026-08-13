@@ -1,9 +1,7 @@
-import React from 'react'
+import SimpleDashboardPage from "@/components/dashboard/account/pages/simple-dashboard-page";
 
 const history = () => {
-  return (
-    <div>history</div>
-  )
-}
+  return <SimpleDashboardPage title="تاریخچه" />;
+};
 
-export default history
+export default history;

@@ -1,9 +1,7 @@
-import React from 'react'
+import ArticlesPage from "@/components/templates/articles/pages/articles-page";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <ArticlesPage />;
+};
 
-export default page
+export default page;

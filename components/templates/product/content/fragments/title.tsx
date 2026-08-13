@@ -3,7 +3,9 @@ import React from "react";
 const Title = () => {
   return (
     <div>
-      <h1 className="text-2xl font-Estedad-ExtraBold! text-primary-light!">پیراهن باکسی 2 جیب آستین 3 ربع – 303071</h1>
+      <h1 className="text-xl leading-9 font-Estedad-ExtraBold! text-primary-light! sm:text-2xl">
+        جاگرفول بگی کمر calvin مشکی کد ۵۰۴۲۹۳
+      </h1>
     </div>
   );
 };

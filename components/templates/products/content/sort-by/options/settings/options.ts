@@ -1,35 +1,32 @@
-import { redirect } from "next/navigation";
-
 export const sortOptions = [
   {
-    id: crypto.randomUUID(),
+    id: "popular",
     label: "پرفروش‌ترین",
     value: 1,
   },
   {
-    id: crypto.randomUUID(),
+    id: "related",
     label: "مرتبط‌ترین",
     value: 2,
   },
   {
-    id: crypto.randomUUID(),
+    id: "most-viewed",
     label: "پربازدیدترین",
     value: 3,
   },
   {
-    id: crypto.randomUUID(),
+    id: "newest",
     label: "جدیدترین",
     value: 4,
   },
   {
-    id: crypto.randomUUID(),
+    id: "cheapest",
     label: "ارزان‌ترین",
     value: 5,
   },
   {
-    id: crypto.randomUUID(),
+    id: "expensive",
     label: "گران‌ترین",
     value: 6,
   },
 ];
-

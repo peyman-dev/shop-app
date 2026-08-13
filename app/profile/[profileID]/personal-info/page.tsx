@@ -1,9 +1,7 @@
-import React from 'react'
+import AccountDetailsPage from "@/components/dashboard/account/pages/account-details-page";
 
 const personalInfo = () => {
-  return (
-    <div>personalInfo</div>
-  )
-}
+  return <AccountDetailsPage />;
+};
 
-export default personalInfo
+export default personalInfo;
