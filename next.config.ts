@@ -5,7 +5,19 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: "50mb"
     }
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
